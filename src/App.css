@@ -2,101 +2,37 @@
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-/* .background-principal {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.background-principal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(80%);
-  position: cover;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.welcome-principal {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  font-family: "Playfair Display", serif;
-}
-
-.welcome-principal > div:first-child p {
-  font-size: 3rem;
-  margin: 0.2rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-}
-
-.welcome-principal > div:last-child p {
-  font-size: 1.2rem;
-  margin: 0.3rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  letter-spacing: 1px;
-} */
-/* .background-principal {
+.audio-controls {
+  height: 50px;
+  left: 42px;
   position: absolute;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.background-principal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(80%);
-}
-
-.welcome-principal {
-  position: relative;
+  top: 130px;
+  width: 50px;
+  background: #413b3b;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  font-family: "Playfair Display", serif;
 }
 
-.welcome-principal > div:first-child p {
-  font-size: 3rem;
-  margin: 0.2rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+.buttonMusic {
+  width: 30px;
+  height: 30px;
+  fill: #b55663;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-left: 11px;
 }
 
-.welcome-principal > div:last-child p {
-  font-size: 1.2rem;
-  margin: 0.3rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  letter-spacing: 1px;
-} */
+.buttonMusic:hover {
+  fill: #d98471; /* optional hover color */
+}
 .mea-culpa-regular {
   font-family: "Mea Culpa", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.hero-section {
+.firstSection {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -111,7 +47,6 @@
   box-sizing: border-box;
   text-align: center;
 }
-
 .background-image {
   position: absolute;
   top: 0;
@@ -124,13 +59,13 @@
 }
 
 /* Names styling (top) */
-.names {
+.namesContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-.names p {
+.namesContainer p {
   font-size: 3rem;
   font-weight: bold;
   margin: 0.3rem;
@@ -150,54 +85,16 @@
 }
 
 /* Quote styling (bottom) */
-.quote p {
+.quoteContainer p {
   font-size: 2rem;
   margin: 0.3rem;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
 }
 
-.quotep {
+.quotePhrase {
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: 400;
   font-style: normal;
   line-height: 80%;
-
-  /* font-family: "Arizonia", cursive;
-  font-weight: 400;
-  font-style: normal; */
-
-  /* font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal; */
-}
-@media (prefers-reduced-motion: no-preference) {
-  /* .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  } */
-}
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
