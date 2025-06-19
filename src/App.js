@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
+
 import principalPic from './static/DSC_0817.jpg';
 import lapromesa from './static/lapromesa.mp3';
 import './App.css';
@@ -5,23 +7,35 @@ import './App.css';
 
 
 function App() {
+  const audioRef = useRef(null);
+  const [hasInteracted, setHasInteracted] = useState(false);
+
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      if (!hasInteracted && audioRef.current) {
+        audioRef.current.play().catch((err) => {
+          console.log('Autoplay failed:', err);
+        });
+        setHasInteracted(true);
+        // Remove event listener after first interaction
+        document.removeEventListener('click', handleUserInteraction);
+      }
+    };
+
+    document.addEventListener('click', handleUserInteraction);
+
+    return () => {
+      document.removeEventListener('click', handleUserInteraction);
+    };
+  }, [hasInteracted]);
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+
       </header>
-      <audio src={lapromesa} loop="" className="framer-audio" preload="metadata" autoPlay></audio>
+      <audio ref={audioRef} loop className="framer-audio" preload="metadata" autoPlay>
+        <source src={lapromesa}></source>
+      </audio>
       <div class="hero-section">
         <img src={principalPic} alt="pameycos" class="background-image" />
 
