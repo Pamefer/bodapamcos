@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
 import lapromesa from './static/lapromesa.mp3';
 import './App.css';
+import Carousel from './Carousel';
 
 const Pause = ({ onPlayerClick }) => {
   return (
@@ -115,6 +116,8 @@ function App() {
         </div>
 
       </div>
+      <Carousel />
+
     </div>
   );
 }
