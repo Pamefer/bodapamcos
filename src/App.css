@@ -6,7 +6,7 @@
 .audio-controls {
   height: 50px;
   bottom: 1rem;
-  right: 1rem;
+  right: 3rem;
   position: absolute;
   width: 50px;
   background: #413b3b;
@@ -137,4 +137,19 @@
 
 .normalBlock {
   line-height: 0.5rem;
+}
+
+.thirdSection {
+  transform: rotate(-11deg);
+}
+.iconos {
+  width: "50%";
+}
+.iconos img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
 }

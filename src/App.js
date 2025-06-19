@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
+import manos from './static/DSC_0892.jpg';
+import nino from './static/a12.jpg';
+import anillos from './static/anillos.png';
+import bola from './static/bola.png';
 import lapromesa from './static/lapromesa.mp3';
 import './App.css';
 import Carousel from './Carousel';
@@ -98,6 +102,7 @@ function App() {
 
       <div className="secondSection">
         <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p>
+        <img src={manos} alt="manos"></img>
         <p>
           Tenemos el honor de invitarte a
         </p>
@@ -116,7 +121,20 @@ function App() {
         </div>
 
       </div>
+      <div className="thirdSection">
+        <div className="iconos">
+          <img src={anillos} ></img>
+        </div>
+
+      </div>
       <Carousel />
+      <div className="thirdSection">
+
+        <div className="iconos">
+          <img src={bola} ></img>
+        </div>
+      </div>
+
 
     </div>
   );
