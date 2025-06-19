@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 .audio-controls {
@@ -99,4 +100,38 @@
   font-weight: 400;
   font-style: normal;
   line-height: 80%;
+}
+
+.secondSection {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nuestraBoda {
+  /* font-family: "Great Vibes", cursive; */
+
+  font-family: "Mea Culpa", cursive;
+  font-size: 40px;
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 31px;
+  align-self: center;
+  margin: 3rem 0;
+}
+.nuestraBoda p {
+  margin: 0;
+}
+
+.line-start {
+  text-align: left;
+}
+
+.line-end {
+  text-align: right;
+}
+
+.normalBlock {
+  line-height: 0.5rem;
 }

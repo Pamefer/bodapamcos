@@ -88,12 +88,32 @@ function App() {
           <p className="dateFirst">09 · 03 · 2025</p>
         </div>
 
-
         <div className="quoteContainer">
           <p className="quotePhrase">Lo que Dios ha unido</p>
           <p className="quotePhrase">que no lo separe el hombre</p>
           <p className="mateo">- MATEO 19:6 -</p>
         </div>
+      </div>
+
+      <div className="secondSection">
+        <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p>
+        <p>
+          Tenemos el honor de invitarte a
+        </p>
+        <div className="nuestraBoda">
+          <p className="line-start">Nuestra</p>
+          <p className="line-end">Boda</p>
+        </div>
+        <p>Con la bendicion de nuestros padres a la distancia</p>
+        <div className="normalBlock">
+          <p>Jose Guaman</p>
+          <p>Rosa Cañar</p>
+        </div>
+        <div className="normalBlock">
+          <p>Cosme Guerrero</p>
+          <p>Blanca Riofrio</p>
+        </div>
+
       </div>
     </div>
   );
