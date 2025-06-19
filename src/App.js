@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
 import manos from './static/DSC_0892.jpg';
-import nino from './static/a12.jpg';
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
 import lapromesa from './static/lapromesa.mp3';
@@ -123,7 +122,7 @@ function App() {
       </div>
       <div className="thirdSection">
         <div className="iconos">
-          <img src={anillos} ></img>
+          <img src={anillos} alt="anillos" ></img>
         </div>
 
       </div>
@@ -131,7 +130,7 @@ function App() {
       <div className="thirdSection">
 
         <div className="iconos">
-          <img src={bola} ></img>
+          <img src={bola} alt="bola"></img>
         </div>
       </div>
 

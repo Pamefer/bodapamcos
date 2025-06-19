@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Cormorant Garamond", serif;
 }
 
 .audio-controls {
@@ -111,11 +112,10 @@
   flex-direction: column;
   justify-content: center;
 }
+.secondSection p {
+  font-size: 20px;
+}
 .nuestraBoda {
-  /* font-family: "Great Vibes", cursive; */
-
-  font-family: "Mea Culpa", cursive;
-  font-size: 40px;
   width: 11rem;
   display: flex;
   flex-direction: column;
@@ -124,7 +124,10 @@
   margin: 3rem 0;
 }
 .nuestraBoda p {
+  /* font-family: "Great Vibes", cursive; */
+  font-family: "Mea Culpa", cursive;
   margin: 0;
+  font-size: 46px;
 }
 
 .line-start {
