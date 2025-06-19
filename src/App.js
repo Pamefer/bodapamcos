@@ -23,7 +23,7 @@ function App() {
       </header>
       <audio src={lapromesa} loop="" className="framer-audio" preload="metadata" autoPlay></audio>
       <div class="hero-section">
-        <img src={principalPic} alt="Background Image" class="background-image" />
+        <img src={principalPic} alt="pameycos" class="background-image" />
 
         <div class="names">
           <p>PAME</p>
