@@ -76,17 +76,23 @@ function App() {
         <div className="audio-controls">
           {isPlaying ? <Pause onPlayerClick={handlePause} /> : <Play onPlayerClick={handlePlay} />}
         </div>
-
-        <div className="namesContainer">
-          <p>PAME</p>
-          <p>&</p>
-          <p>COSME</p>
+        <div className="namesdate">
+          <div className="namesContainer">
+            {/* <p>PAME</p>
+            <p>&</p>
+            <p>COSME</p> */}
+            <p>Pame</p>
+            <p>&</p>
+            <p>Cosme</p>
+          </div>
+          <p className="dateFirst">09 · 03 · 2025</p>
         </div>
+
 
         <div className="quoteContainer">
           <p className="quotePhrase">Lo que Dios ha unido</p>
           <p className="quotePhrase">que no lo separe el hombre</p>
-          <p>- MATEO 19:6 -</p>
+          <p className="mateo">- MATEO 19:6 -</p>
         </div>
       </div>
     </div>

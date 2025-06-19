@@ -4,9 +4,9 @@
 
 .audio-controls {
   height: 50px;
-  left: 42px;
+  left: 30px;
   position: absolute;
-  top: 130px;
+  top: 250px;
   width: 50px;
   background: #413b3b;
   border-radius: 50%;
@@ -26,11 +26,6 @@
 
 .buttonMusic:hover {
   fill: #d98471; /* optional hover color */
-}
-.mea-culpa-regular {
-  font-family: "Mea Culpa", cursive;
-  font-weight: 400;
-  font-style: normal;
 }
 .firstSection {
   position: relative;
@@ -59,6 +54,7 @@
 }
 
 /* Names styling (top) */
+
 .namesContainer {
   display: flex;
   align-items: center;
@@ -66,33 +62,39 @@
   width: 100%;
 }
 .namesContainer p {
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: bold;
   margin: 0.3rem;
+  margin-top: 45px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-  /* 
-  font-family: "Corinthia", cursive;
-  font-weight: 700;
-  font-style: normal; */
-  /* font-family: "Monsieur La Doulaise", cursive;
+  font-family: "Great Vibes", cursive;
+  /* font-family: "Mea Culpa", cursive; */
+
   font-weight: 400;
   font-style: normal;
-  line-height: 80%; */
-  font-family: "Cormorant", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+  line-height: 80%;
 }
-
-/* Quote styling (bottom) */
+.namesdate {
+  line-height: 3px;
+}
+.dateFirst,
+.mateo {
+  font-size: 20px !important;
+}
+.mateo {
+  margin-top: 10px !important;
+}
 .quoteContainer p {
   font-size: 2rem;
   margin: 0.3rem;
+  /* line-height: 3px; */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
 }
 
 .quotePhrase {
+  /* font-family: "Italianno", cursive; */
+  /* font-family: "Mea Culpa", cursive; */
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: 400;
   font-style: normal;
