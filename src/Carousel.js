@@ -8,7 +8,6 @@ import foto3 from './static/DSC_0770.jpg';
 import foto4 from './static/DSC_0892.jpg';
 import foto5 from './static/DSC_0901.jpg';
 import foto6 from './static/DSC_0916.jpg';
-import foto7 from './static/DSC_0932.jpg';
 
 const images = [
     foto1, foto2, foto3, foto4, foto5, foto6
