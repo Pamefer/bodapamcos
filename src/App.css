@@ -89,7 +89,7 @@
   margin-top: 10px !important;
 }
 .quoteContainer p {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0.3rem;
   /* line-height: 3px; */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
@@ -97,9 +97,9 @@
 }
 
 .quotePhrase {
-  /* font-family: "Italianno", cursive; */
+  font-family: "Italianno", cursive;
   /* font-family: "Mea Culpa", cursive; */
-  font-family: "Monsieur La Doulaise", cursive;
+  /* font-family: "Monsieur La Doulaise", cursive; */
   font-weight: 400;
   font-style: normal;
   line-height: 80%;
@@ -111,22 +111,25 @@
   flex-direction: column;
   justify-content: center;
 }
-.secondSection p {
+
+.normalText {
   font-size: 20px;
 }
+
+.cursiveTextMea {
+  /* font-family: "Great Vibes", cursive; */
+  font-family: "Mea Culpa", cursive;
+  margin: 0;
+  font-size: 46px;
+}
+
 .nuestraBoda {
   width: 11rem;
   display: flex;
   flex-direction: column;
   line-height: 31px;
   align-self: center;
-  margin: 3rem 0;
-}
-.nuestraBoda p {
-  /* font-family: "Great Vibes", cursive; */
-  font-family: "Mea Culpa", cursive;
-  margin: 0;
-  font-size: 46px;
+  margin: 2rem 0 3rem 0;
 }
 
 .line-start {
@@ -184,4 +187,5 @@
   object-fit: cover;
   border-radius: 50%; /* makes it a circle */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  filter: grayscale(80%);
 }

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
-// import manos from './static/DSC_0892.jpg';
-import rascacielo from './static/rascacielo.jpg';
+import rascacielo from './static/DSC_0892.jpg';
+// import rascacielo from './static/rascacielo.jpg';
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
 import lapromesa from './static/lapromesa.mp3';
@@ -94,43 +94,31 @@ function App() {
         </div>
 
         <div className="quoteContainer">
-          <p className="quotePhrase">Lo que Dios ha unido</p>
+          <p className="quotePhrase">Nos Casamos!</p>
+          {/* <p className="quotePhrase">Lo que Dios ha unido</p>
           <p className="quotePhrase">que no lo separe el hombre</p>
-          <p className="mateo">- MATEO 19:6 -</p>
+          <p className="mateo">- MATEO 19:6 -</p> */}
         </div>
       </div>
 
-      <div className="secondSection">
+      <div className="secondSection normalText">
         <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p>
-        <div >
-          <img src={rascacielo} alt="manos" className="centralPic"></img>
-
-        </div>
         <p>
           Tenemos el honor de invitarte a
         </p>
         <div className="nuestraBoda">
-          <p className="line-start">Nuestra</p>
-          <p className="line-end">Boda</p>
+          <p className="cursiveTextMea line-start">Nuestra</p>
+          <p className=" cursiveTextMea line-end">Boda</p>
         </div>
-        <p>Con la bendicion de nuestros padres a la distancia</p>
-        <div className="normalBlock">
-          <p>Jose Guaman</p>
-          <p>Rosa Cañar</p>
-        </div>
-        <div className="normalBlock">
-          <p>Cosme Guerrero</p>
-          <p>Blanca Riofrio</p>
+        <div >
+          <img src={rascacielo} alt="manos" className="centralPic"></img>
         </div>
       </div>
-      <div className="thirdSection">
-        <h2>Ceremonia y Recepción</h2>
+      <div className="thirdSection normalText">
+        <p className="cursiveTextMea">Ceremonia y Recepción</p>
         <p>Sábado, 13 de septiembre</p>
         <p>4:00 PM</p>
-        <div className="normalBlock">
-          <p>Kearny, New Jersey</p>
-          <p>476 Devon St.</p>
-        </div>
+        <p>476 Devon St. Kearny, New Jersey</p>
 
         <a
           href="https://www.google.com/maps/place/476+Devon+St,+Kearny,+NJ+07032"
@@ -138,7 +126,7 @@ function App() {
           rel="noopener noreferrer"
           class="maps-button"
         >
-          📍 Ver ubicación
+          Ver ubicación
         </a>
 
         <div className="iconos">
@@ -154,7 +142,7 @@ function App() {
         </div>
       </div>
 
-
+      <p></p>
     </div>
   );
 }
