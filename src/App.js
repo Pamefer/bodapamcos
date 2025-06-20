@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
 import manos from './static/DSC_0892.jpg';
+import rascacielo from './static/rascacielo.jpg';
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
 import lapromesa from './static/lapromesa.mp3';
@@ -101,7 +102,10 @@ function App() {
 
       <div className="secondSection">
         <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p>
-        <img src={manos} alt="manos"></img>
+        <div >
+          <img src={rascacielo} alt="manos" className="centralPic"></img>
+
+        </div>
         <p>
           Tenemos el honor de invitarte a
         </p>
@@ -118,9 +122,25 @@ function App() {
           <p>Cosme Guerrero</p>
           <p>Blanca Riofrio</p>
         </div>
-
       </div>
       <div className="thirdSection">
+        <h2>Ceremonia y Recepción</h2>
+        <p>Sábado, 13 de septiembre</p>
+        <p>4:00 PM</p>
+        <div className="normalBlock">
+          <p>Kearny, New Jersey</p>
+          <p>476 Devon St.</p>
+        </div>
+
+        <a
+          href="https://www.google.com/maps/place/476+Devon+St,+Kearny,+NJ+07032"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="maps-button"
+        >
+          📍 Ver ubicación
+        </a>
+
         <div className="iconos">
           <img src={anillos} alt="anillos" ></img>
         </div>
