@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
-import manos from './static/DSC_0892.jpg';
+// import manos from './static/DSC_0892.jpg';
 import rascacielo from './static/rascacielo.jpg';
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
