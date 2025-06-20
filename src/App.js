@@ -116,22 +116,29 @@ function App() {
       </div>
       <div className="thirdSection normalText">
         <p className="cursiveTextMea">Ceremonia y Recepción</p>
-        <p>Sábado, 13 de septiembre</p>
-        <p>4:00 PM</p>
-        <p>476 Devon St. Kearny, New Jersey</p>
+
+        <div className="textDobleColumn">
+          <div className="iconos">
+            <img src={anillos} alt="anillos" ></img>
+          </div>
+          <div>
+            <p>Sábado, 13 de septiembre</p>
+            <p>4:00 PM</p>
+            <p className="smallText">476 Devon St. Kearny, New Jersey</p>
+          </div>
+
+        </div>
 
         <a
           href="https://www.google.com/maps/place/476+Devon+St,+Kearny,+NJ+07032"
           target="_blank"
           rel="noopener noreferrer"
-          class="maps-button"
+          className="maps-button"
         >
           Ver ubicación
         </a>
 
-        <div className="iconos">
-          <img src={anillos} alt="anillos" ></img>
-        </div>
+
 
       </div>
       <Carousel />
