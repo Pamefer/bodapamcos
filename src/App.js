@@ -99,7 +99,6 @@ function App() {
       </div>
 
       <div className="secondSection normalText">
-        {/* <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p> */}
         <p>Lo que empezó como una amistad creció con el tiempo... se volvió complicidad, amor, y ahora, un para siempre.</p>
         <div >
           <img src={nieve} alt="manos" className="centralSquare"></img>
@@ -120,18 +119,16 @@ function App() {
           <img src={rascacielo} alt="manos" className="centralCircle"></img>
         </div>
       </div>
+      <div className="iconos">
+        <img src={anillos} alt="anillos" ></img>
+      </div>
       <div className="thirdSection normalText">
         <p className="cursiveTextMea">Ceremonia y Recepción</p>
 
-        <div className="textDobleColumn">
-          <div className="iconos">
-            <img src={anillos} alt="anillos" ></img>
-          </div>
-          <div>
-            <p>Sábado, 13 de septiembre</p>
-            <p>4:00 PM</p>
-            <p className="smallText">476 Devon St. Kearny, New Jersey</p>
-          </div>
+        <div>
+          <p>Sábado, 13 de septiembre</p>
+          <p>4:00 PM</p>
+          <p className="smallText">476 Devon St. Kearny, New Jersey</p>
 
         </div>
 
