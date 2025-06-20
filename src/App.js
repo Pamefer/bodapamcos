@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/DSC_0817.jpg';
 import rascacielo from './static/DSC_0892.jpg';
+import nieve from './static/w3.jpg';
 // import rascacielo from './static/rascacielo.jpg';
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
@@ -83,18 +84,14 @@ function App() {
         </div>
         <div className="namesdate">
           <div className="namesContainer">
-            {/* <p>PAME</p>
-            <p>&</p>
-            <p>COSME</p> */}
-            <p>Pame</p>
-            <p>&</p>
-            <p>Cosme</p>
+            <p>Pame & Cosme</p>
           </div>
-          <p className="dateFirst">09 · 03 · 2025</p>
         </div>
 
         <div className="quoteContainer">
           <p className="quotePhrase">Nos Casamos!</p>
+          <p className="dateFirst">09 · 03 · 2025</p>
+
           {/* <p className="quotePhrase">Lo que Dios ha unido</p>
           <p className="quotePhrase">que no lo separe el hombre</p>
           <p className="mateo">- MATEO 19:6 -</p> */}
@@ -102,16 +99,25 @@ function App() {
       </div>
 
       <div className="secondSection normalText">
-        <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p>
+        {/* <p>Y despues de algunos años, empieza el "para siempre" que tanto hemos soñado...</p> */}
+        <p>Lo que empezó como una amistad creció con el tiempo... se volvió complicidad, amor, y ahora, un para siempre.</p>
+        <div >
+          <img src={nieve} alt="manos" className="centralSquare"></img>
+        </div>
         <p>
-          Tenemos el honor de invitarte a
+          Con la promesa más sincera: elegirnos cada día
+        </p>
+        <p>
+          Tenemos el agrado de invitarte a
         </p>
         <div className="nuestraBoda">
           <p className="cursiveTextMea line-start">Nuestra</p>
           <p className=" cursiveTextMea line-end">Boda</p>
         </div>
+
+        <p>Te esperamos para ser parte de este instante eterno</p>
         <div >
-          <img src={rascacielo} alt="manos" className="centralPic"></img>
+          <img src={rascacielo} alt="manos" className="centralCircle"></img>
         </div>
       </div>
       <div className="thirdSection normalText">
