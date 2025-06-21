@@ -1,17 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
-import principalPic from './static/DSC_0817.jpg';
-import rascacielo from './static/DSC_0892.jpg';
+import principalPic from './static/portada.jpg';
+import anillospic from './static/DSC_0892.jpg';
 import nieve from './static/w3.jpg';
 
-// import rascacielo from './static/rascacielo.jpg';
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
+import manitos from './static/DSC_0932.jpg';
+
 import lapromesa from './static/lapromesa.mp3';
 import './App.css';
 import Carousel from './Carousel';
 import { motion } from 'framer-motion';
-
-
+import foto8 from './static/DSC_0884.jpg';
+import foto9 from './static/DSC_0868.jpg';
+import foto10 from './static/DSC_0824.jpg';
 const Pause = ({ onPlayerClick }) => {
   return (
     <svg className="buttonMusic" viewBox="0 0 60 60" onClick={onPlayerClick}>
@@ -61,7 +63,6 @@ function App() {
       }
     };
 
-    // Listen for any click on the document
     document.addEventListener('click', handleUserInteraction);
 
     return () => {
@@ -122,10 +123,6 @@ function App() {
             ))}
           </motion.p>
           <p className="dateFirst">09 · 03 · 2025</p>
-
-          {/* <p className="quotePhrase">Lo que Dios ha unido</p>
-          <p className="quotePhrase">que no lo separe el hombre</p>
-          <p className="mateo">- MATEO 19:6 -</p> */}
         </div>
       </div>
 
@@ -165,7 +162,6 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 5, delay: 0.5 }}
             whileInView={{ opacity: 1, y: 0 }}
-
           >
             Nuestra
           </motion.p>
@@ -175,19 +171,17 @@ function App() {
             transition={{ duration: 5 }}
             viewport={{ once: true, amount: 0.7 }}
             whileInView={{ opacity: 1, y: 0 }}
-
           >
             Boda
           </motion.p>
         </div>
 
         <div >
-          <img src={rascacielo} alt="manos" className="centralCircle"></img>
-
+          <img src={anillospic} alt="manos" className="centralCircle"></img>
         </div>
       </div>
 
-      <div className="thirdSection normalText">
+      <div className="section thirdSection normalText">
         <p className="subtitle cursiveTextMea">Ceremonia y Recepción</p>
         <div className="iconos">
           <img src={anillos} alt="anillos" ></img>
@@ -203,22 +197,63 @@ function App() {
           href="https://www.google.com/maps/place/476+Devon+St,+Kearny,+NJ+07032"
           target="_blank"
           rel="noopener noreferrer"
-          className="maps-button"
+          className="maps-button buttonweb"
         >
           Ver ubicación
         </a>
-
-
-
       </div>
-      <Carousel />
-      <div className="thirdSection">
+      <div className="section fourthSection normalText">
+        <p className="subtitle cursiveTextMea">Código de vestimenta</p>
+        <p>ELEGANTE AL AIRE LIBRE</p>
+        <p>Favor de reservar el color blanco, rojo y terracota.</p>
+      </div>
+      <div >
+        <img src={manitos} alt="manos" className="normalPic"></img>
+      </div>
+      <div className="section fifthSection normalText">
+        <p className="subtitle cursiveTextMea">Regalos</p>
 
+        <p>¡Su presencia es el mejor regalo para nosotros!
+          Si aún desean obsequiarnos un detalle para nuestra nueva etapa en matrimonio,
+          el sobre será bienvenido ese día con mucho cariño.</p>
+      </div>
+      <div >
+        <img src={foto8} alt="manos" className="normalPic"></img>
+        <img src={foto9} alt="manos" className="normalPic"></img>
+        <img src={foto10} alt="manos" className="normalPic"></img>
+      </div>
+      <div className="section sixthSection normalText">
+        <p className="subtitle cursiveTextMea">Nos ayudas con la playlist? </p>
         <div className="iconos">
           <img src={bola} alt="bola"></img>
         </div>
-      </div>
 
+        <a
+          href="https://youtube.com/playlist?list=PLXnYM_Pauo2hUlqXqd1RhOePPsnJ0G0qQ&si=8GPKP_yf1HlmAp6r"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="maps-button buttonweb"
+        >
+          Agregar una canción
+        </a>
+
+      </div>
+      <Carousel />
+      <div className="section seventhSection normalText">
+        <p className="subtitle">RSPV</p>
+        <a
+          href="https://www.google.com/maps/place/476+Devon+St,+Kearny,+NJ+07032"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="maps-button buttonweb"
+        >
+          Confirmar
+        </a>
+      </div>
+      <div className="section eigthSection normalText">
+        <p className="subtitle cursiveTextMea">Gracias por acompañarnos en este dia tan especial para nosotros.</p>
+
+      </div>
       <p></p>
     </div >
   );

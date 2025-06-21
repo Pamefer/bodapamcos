@@ -117,6 +117,10 @@
   justify-content: center;
 }
 
+.section {
+  padding: 3rem;
+}
+
 .smallText {
   font-size: 15px;
 }
@@ -133,6 +137,7 @@
 
 .subtitle {
   font-size: 40px;
+  margin-bottom: 35px;
 }
 
 .nuestraBoda {
@@ -175,6 +180,9 @@
   transform: rotate(-14deg);
 }
 
+.buttonweb {
+  width: 50%;
+}
 .maps-button {
   display: inline-block;
   background-color: #b55663;
@@ -186,7 +194,6 @@
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease;
-  width: 35%;
 }
 
 .maps-button:hover {
@@ -199,7 +206,6 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  filter: grayscale(80%);
 }
 .centralSquare {
   width: 100%;
@@ -221,4 +227,10 @@
   row-gap: 20px;
   justify-content: center;
   align-items: center;
+  background: rgba(249, 230, 227, 0.4);
+  border-radius: 67px 0;
+}
+
+.normalPic {
+  width: 100%;
 }
