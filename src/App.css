@@ -183,6 +183,10 @@
 .buttonweb {
   width: 50%;
 }
+
+.bola {
+  margin-top: 20px;
+}
 .maps-button {
   display: inline-block;
   background-color: #b55663;
@@ -233,4 +237,21 @@
 
 .normalPic {
   width: 100%;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  color: white;
+  font-family: "Playfair Display", serif;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
 }

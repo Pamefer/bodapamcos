@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import principalPic from './static/portada.jpg';
+import nieve2 from './static/nieve2.jpg';
 import anillospic from './static/DSC_0892.jpg';
-import nieve from './static/w3.jpg';
 
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
-import manitos from './static/DSC_0932.jpg';
+import manitos_3 from './static/manitos_3.jpg';
 
 import lapromesa from './static/lapromesa.mp3';
 import './App.css';
@@ -14,6 +14,7 @@ import { motion } from 'framer-motion';
 import foto8 from './static/DSC_0884.jpg';
 import foto9 from './static/DSC_0868.jpg';
 import foto10 from './static/DSC_0824.jpg';
+import edited from './static/edited.jpg';
 const Pause = ({ onPlayerClick }) => {
   return (
     <svg className="buttonMusic" viewBox="0 0 60 60" onClick={onPlayerClick}>
@@ -141,7 +142,7 @@ function App() {
         <div >
           <motion.img
             className="centralSquare"
-            src={nieve}
+            src={nieve2}
             alt="manos"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -208,7 +209,7 @@ function App() {
         <p>Favor de reservar el color blanco, rojo y terracota.</p>
       </div>
       <div >
-        <img src={manitos} alt="manos" className="normalPic"></img>
+        <img src={edited} alt="manos" className="normalPic"></img>
       </div>
       <div className="section fifthSection normalText">
         <p className="subtitle cursiveTextMea">Regalos</p>
@@ -219,8 +220,9 @@ function App() {
       </div>
       <div >
         <img src={foto8} alt="manos" className="normalPic"></img>
-        <img src={foto9} alt="manos" className="normalPic"></img>
         <img src={foto10} alt="manos" className="normalPic"></img>
+        <img src={foto9} alt="manos" className="normalPic"></img>
+
       </div>
       <div className="section sixthSection normalText">
         <p className="subtitle cursiveTextMea">Nos ayudas con la playlist? </p>
@@ -232,20 +234,23 @@ function App() {
           href="https://youtube.com/playlist?list=PLXnYM_Pauo2hUlqXqd1RhOePPsnJ0G0qQ&si=8GPKP_yf1HlmAp6r"
           target="_blank"
           rel="noopener noreferrer"
-          className="maps-button buttonweb"
+          className="maps-button buttonweb bola"
         >
           Agregar una canción
         </a>
 
       </div>
       <Carousel />
+
+
       <div className="section seventhSection normalText">
-        <p className="subtitle">RSPV</p>
+        <p className="subtitle">¿Nos acompañas?</p>
+        <p>Por favor, confirma tu asistencia enviándonos un mensajito </p>
         <a
-          href="https://www.google.com/maps/place/476+Devon+St,+Kearny,+NJ+07032"
+          href="https://wa.me/19735835202?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20su%20boda%20el%2013%20de%20septiembre%20🥰"
           target="_blank"
           rel="noopener noreferrer"
-          className="maps-button buttonweb"
+          className="maps-button buttonweb bola"
         >
           Confirmar
         </a>
@@ -254,7 +259,8 @@ function App() {
         <p className="subtitle cursiveTextMea">Gracias por acompañarnos en este dia tan especial para nosotros.</p>
 
       </div>
-      <p></p>
+      <img src={manitos_3} alt="manos" className="normalPic"></img>
+
     </div >
   );
 }
