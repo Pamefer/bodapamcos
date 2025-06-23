@@ -94,20 +94,27 @@ function App() {
       }
     };
 
+
     const handleVisibilityChange = () => {
       if (document.hidden) {
-        audioRef.current.pause();
         if (audioRef.current) {
           audioRef.current.pause();
           setIsPlaying(false);
         }
       } else {
-        audioRef.current.play().catch(() => {
-          console.log("Requiere interacción del usuario para reanudar el audio.");
-        });
+        if (audioRef.current) {
+          audioRef.current
+            .play()
+            .then(() => {
+              setIsPlaying(true); // ✅ Actualiza ícono si se pudo reproducir
+            })
+            .catch(() => {
+              setIsPlaying(false); // ✅ Si falla, se asegura que muestre "Play"
+              console.log("Requiere interacción del usuario para reanudar el audio.");
+            });
+        }
       }
     };
-
 
     document.addEventListener('click', handleUserInteraction);
     document.addEventListener('visibilitychange', handleVisibilityChange);
@@ -169,7 +176,7 @@ function App() {
               <motion.p className="pame" variants={itempc}>Pame</motion.p>
               <motion.p className="cosme" variants={itempc}>& Cosme</motion.p>
             </motion.div>
-            );
+
             <div className="quoteContainer">
               <motion.p
                 variants={container}
