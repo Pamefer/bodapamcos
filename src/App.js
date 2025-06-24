@@ -345,7 +345,7 @@ function App() {
             <p className="subtitle cursiveTextMea">Gracias por acompañarnos en este día tan especial para nosotros.</p>
 
           </motion.div>
-          <img src={manitos} alt="manos" className="manitos"></img>
+          <img src={manitos} alt="manosfinal" className="manitos"></img>
         </div>
       }
 
