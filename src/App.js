@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import Carousel from './Carousel';
 
-import lapromesa from './static/suertetenerte.mp3';
+import lapromesa from './static/suertetenerte2.m4a';
 
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
@@ -194,7 +194,7 @@ function App() {
                   </motion.span>
                 ))}
               </motion.p>
-              <p className="dateFirst">09 · 03 · 2025</p>
+              <p className="dateFirst">09 · 13 · 2025</p>
             </div>
           </div>
 
@@ -281,8 +281,8 @@ function App() {
           </motion.div>
           <div className="section fourthSection normalText">
             <p className="subtitle cursiveTextMea">Código de vestimenta</p>
-            <p>ELEGANTE AL AIRE LIBRE</p>
-            <p>Favor de reservar el color blanco, rojo y terracota.</p>
+            <p>FORMAL AL AIRE LIBRE</p>
+            <p>Evitar color blanco, rojo y terracota</p>
           </div>
           <div className="container-gradas">
             <img src={gradas} alt="manos" className="gradas"></img>
