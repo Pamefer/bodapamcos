@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import Carousel from './Carousel';
 
-import lapromesa from './static/lapromesa.mp3';
+import lapromesa from './static/serapor.m4a';
 
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
