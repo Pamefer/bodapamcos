@@ -87,7 +87,7 @@ function App() {
       },
     },
   };
-  // 🔁 Handles user interaction anywhere to auto-play
+
   useEffect(() => {
     const handleUserInteraction = () => {
       if (!hasInteracted && audioRef.current) {
@@ -205,7 +205,6 @@ function App() {
                 src={nieve}
                 alt="Foto especial"
                 className="centralSquare"
-
                 initial={{
                   clipPath: 'inset(0 50% 0 50%)',
                   opacity: 0,
@@ -215,8 +214,8 @@ function App() {
                   opacity: 1,
                 }}
                 transition={{
-                  duration: 2.5,
-                  ease: [0.42, 0, 0.58, 1],
+                  duration: 2,
+                  ease: [0.3, 0, 0.4, 1],
                 }}
                 viewport={{ once: true }}
               />
@@ -258,7 +257,7 @@ function App() {
             className="section thirdSection normalText"
             initial={{ opacity: 0, y: 50 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.1 }}
             whileInView={{ opacity: 1, y: 0 }}>
             <p className="subtitle cursiveTextMea">Ceremonia y Recepción</p>
             <div className="iconos">
@@ -285,8 +284,8 @@ function App() {
             <p>ELEGANTE AL AIRE LIBRE</p>
             <p>Favor de reservar el color blanco, rojo y terracota.</p>
           </div>
-          <div >
-            <img src={gradas} alt="manos" className="normalPic"></img>
+          <div className="container-gradas">
+            <img src={gradas} alt="manos" className="gradas"></img>
           </div>
           <motion.div
             className="section fifthSection normalText"
@@ -298,9 +297,9 @@ function App() {
 
             <p>¡Su presencia es el mejor regalo para nosotros!
               Si aún desean obsequiarnos un detalle para nuestra nueva etapa en matrimonio,
-              el sobre será bienvenido ese día con mucho cariño.</p>
+              el sobre cerrado será bienvenido ese día con mucho cariño.</p>
           </motion.div>
-          <div >
+          <div className="picturesInline">
             <img src={foto8} alt="manos" className="normalPic"></img>
             <img src={foto10} alt="manos" className="normalPic"></img>
             <img src={foto9} alt="manos" className="normalPic"></img>
@@ -346,7 +345,7 @@ function App() {
             <p className="subtitle cursiveTextMea">Gracias por acompañarnos en este día tan especial para nosotros.</p>
 
           </motion.div>
-          <img src={manitos} alt="manos" className="normalPic"></img>
+          <img src={manitos} alt="manos" className="manitos"></img>
         </div>
       }
 
