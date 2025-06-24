@@ -152,14 +152,14 @@ function App() {
   return (
     <div className="App">
       {isFirstTime ?
-        <div onClick={() => { setIsFirstTime(false) }}
+        <div
+          className="fullscreen-cover"
+          onClick={() => { setIsFirstTime(false) }}
         >
-          <img src={sobre} alt="pameycos" className="background-image-sobre" />
+          <img src={sobre} alt="sobre principal" className="background-image-sobre" />
         </div>
         :
         <div>
-          <header className="App-header"></header>
-
           <audio ref={audioRef} loop preload="metadata">
             <source src={lapromesa} />
           </audio>
@@ -219,11 +219,6 @@ function App() {
                   ease: [0.42, 0, 0.58, 1],
                 }}
                 viewport={{ once: true }}
-
-              // initial={{ opacity: 0, x: -100 }}
-              // whileInView={{ opacity: 1, x: 0 }}
-              // transition={{ duration: 1.8, ease: 'easeOut' }}
-              // viewport={{ once: true, amount: 0.4 }}
               />
             </div>
             <p>
