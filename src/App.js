@@ -1,21 +1,25 @@
 import { useEffect, useRef, useState } from 'react';
-import principalPic from './static/portada.jpg';
-import nieve2 from './static/nieve2.jpg';
-import anillospic from './static/DSC_0892.jpg';
+import { motion } from 'framer-motion';
+
+import Carousel from './Carousel';
+
+import lapromesa from './static/lapromesa.mp3';
 
 import anillos from './static/anillos.png';
 import bola from './static/bola.png';
-import manitos_3 from './static/manitos_3.jpg';
 
-import lapromesa from './static/lapromesa.mp3';
-import './App.css';
-import Carousel from './Carousel';
-import { motion } from 'framer-motion';
+import principalPic from './static/portada_optimized.webp';
+import nieve from './static/nieve2.jpg';
+import anillospic from './static/DSC_0892.jpg';
+import manitos from './static/manitos_3.jpg';
 import foto8 from './static/DSC_0884.jpg';
 import foto9 from './static/DSC_0868.jpg';
 import foto10 from './static/DSC_0824.jpg';
-import edited from './static/edited.jpg';
-import sobre from './static/sobre.png';
+import gradas from './static/edited.jpg';
+import sobre from './static/sobre_optimized.webp';
+
+import './App.css';
+
 const Pause = ({ onPlayerClick }) => {
   return (
     <svg className="buttonMusic" viewBox="0 0 60 60" onClick={onPlayerClick}>
@@ -198,7 +202,7 @@ function App() {
             <p>Lo que empezó como una amistad creció con el tiempo... se volvió complicidad, amor, y ahora, un para siempre.</p>
             <div >
               <motion.img
-                src={nieve2}
+                src={nieve}
                 alt="Foto especial"
                 className="centralSquare"
 
@@ -287,7 +291,7 @@ function App() {
             <p>Favor de reservar el color blanco, rojo y terracota.</p>
           </div>
           <div >
-            <img src={edited} alt="manos" className="normalPic"></img>
+            <img src={gradas} alt="manos" className="normalPic"></img>
           </div>
           <motion.div
             className="section fifthSection normalText"
@@ -328,7 +332,8 @@ function App() {
             <p className="subtitle">¿Nos acompañas?</p>
             <p>Por favor, confirma tu asistencia enviándonos un mensajito </p>
             <a
-              href="https://wa.me/19735835202?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20su%20boda%20el%2013%20de%20septiembre%20🥰"
+              href="https://form.typeform.com/to/rOMHtih8https://form.typeform.com/to/rOMHtih8"
+              // href="https://wa.me/19735835202?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20su%20boda%20el%2013%20de%20septiembre%20🥰"
               target="_blank"
               rel="noopener noreferrer"
               className="maps-button buttonweb bola"
@@ -346,7 +351,7 @@ function App() {
             <p className="subtitle cursiveTextMea">Gracias por acompañarnos en este día tan especial para nosotros.</p>
 
           </motion.div>
-          <img src={manitos_3} alt="manos" className="normalPic"></img>
+          <img src={manitos} alt="manos" className="normalPic"></img>
         </div>
       }
 
