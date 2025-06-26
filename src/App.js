@@ -297,7 +297,7 @@ function App() {
 
             <p>¡Su presencia es el mejor regalo para nosotros!
               Si aún desean obsequiarnos un detalle para nuestra nueva etapa en matrimonio,
-              el sobre cerrado será bienvenido ese día con mucho cariño.</p>
+              un sobre cerrado será bienvenido ese día con mucho cariño.</p>
           </motion.div>
           <div className="picturesInline">
             <img src={foto8} alt="manos" className="normalPic"></img>
@@ -312,7 +312,7 @@ function App() {
             </div>
 
             <a
-              href="https://youtube.com/playlist?list=PLXnYM_Pauo2hUlqXqd1RhOePPsnJ0G0qQ&si=8GPKP_yf1HlmAp6r"
+              href="https://forms.gle/ZBe4WxwEsAmUYhLw7"
               target="_blank"
               rel="noopener noreferrer"
               className="maps-button buttonweb bola"

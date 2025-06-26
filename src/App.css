@@ -133,15 +133,14 @@
 }
 .dateFirst,
 .mateo {
-  font-size: 20px !important;
+  font-size: 24px !important;
 }
 .mateo {
   margin-top: 10px !important;
 }
 .quoteContainer p {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0.3rem;
-  /* line-height: 3px; */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
 }
@@ -170,7 +169,7 @@
   font-size: 15px;
 }
 .normalText {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .cursiveTextMea {
