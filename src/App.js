@@ -324,10 +324,9 @@ function App() {
           <Carousel />
           <div className="section seventhSection normalText">
             <p className="subtitle">¿Nos acompañas?</p>
-            <p>Por favor, confirma tu asistencia enviándonos un mensajito </p>
+            <p>Por favor confírmanos tu asistencia con un mensajito antes del 1 de agosto. ¡Nos haría mucha ilusión saber que vienes!</p>
             <a
               href="https://form.typeform.com/to/rOMHtih8https://form.typeform.com/to/rOMHtih8"
-              // href="https://wa.me/19735835202?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20su%20boda%20el%2013%20de%20septiembre%20🥰"
               target="_blank"
               rel="noopener noreferrer"
               className="maps-button buttonweb bola"
