@@ -347,3 +347,28 @@
     height: unset;
   }
 }
+
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.blanco {
+  background-color: white;
+}
+.rosa {
+  background-color: #c48e91;
+}
+
+.rojo {
+  background-color: rgb(136, 5, 5);
+}
+
+.colorsWedding {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}

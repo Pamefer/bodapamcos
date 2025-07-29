@@ -282,7 +282,12 @@ function App() {
           <div className="section fourthSection normalText">
             <p className="subtitle cursiveTextMea">Código de vestimenta</p>
             <p>FORMAL AL AIRE LIBRE</p>
-            <p>Evitar color blanco, rojo y terracota</p>
+            <p>Evitar colores</p>
+            <div className="colorsWedding">
+              <div className="circle blanco"></div>
+              <div className="circle rojo"></div>
+              <div className="circle rosa"></div>
+            </div>
           </div>
           <div className="container-gradas">
             <img src={gradas} alt="manos" className="gradas"></img>
@@ -324,7 +329,7 @@ function App() {
           <Carousel />
           <div className="section seventhSection normalText">
             <p className="subtitle">¿Nos acompañas?</p>
-            <p>Por favor confírmanos tu asistencia con un mensajito antes del 1 de agosto. ¡Nos haría mucha ilusión saber que vienes!</p>
+            <p>Por favor confírmanos tu asistencia con un mensajito. ¡Nos haría mucha ilusión saber que vienes!</p>
             <a
               href="https://wa.me/19735835202?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20su%20boda%20el%2013%20de%20septiembre%20🥰"
               target="_blank"
